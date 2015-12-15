@@ -1,4 +1,4 @@
-#gyftrly
+#Gyftrly
 
 I built this web site using the Ruby on Rails framework, incorporating HTML5, SASS, and Bootstrap front-end frameworks. Gyftrly is an easy-to-use organizational app for tracking gifts for people on your shopping list.
 
