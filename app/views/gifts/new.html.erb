@@ -1,0 +1,38 @@
+<h2>Add a new gift here.</h2>
+
+<%= form_for @gift do |f| %>
+
+  <div>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+
+  <div>
+    <%= f.label :recipient %>
+    <%= f.text_field :recipient %>
+  </div>
+
+  <div>
+    <%= f.label :image_url %>
+    <%= f.text_field :image_url %>
+  </div>
+
+  <div>
+    <%= f.label :description %>
+    <%= f.text_field :description %>
+  </div>
+
+  <div>
+    <%= f.label :is_purchased %>
+    <%= f.text_field :is_purchased%>
+  </div>
+
+  <div>
+    <%= f.label :price %>
+    <%= f.text_field :price %>
+  </div>
+
+  <button type="button" class="btn btn-danger btn-default"><%= f.submit %></button>
+
+<% end %>
+

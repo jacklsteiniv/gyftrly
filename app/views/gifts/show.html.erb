@@ -1,0 +1,10 @@
+<h2><%=@gift.title%>.</h2>
+
+<h2><img src = "<%=@gift.image_url%>"></h2>
+<p>This gift is for <%= @gift.recipient %>, and costs $<%= @gift.price %>0.
+<%= @gift.description %>.
+<p>
+<button type="button" class="btn btn-success"><%= link_to "Edit this gift!", edit_gift_path(@gift) %></button>
+<br>
+<button type="button" class="btn btn-success"><%= link_to "Delete this gift", gift_path, method: :delete %></button>
+<br>

@@ -1,0 +1,82 @@
+// Place all the styles related to the gifts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+$content-width: 1400px;
+$wintergreen: #1FDA9A;
+$santared: #EE4B3E;
+$reindeer: #F5EACD;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+body, p {
+  background-color: #F2F2F3;
+  font-family: Futura;
+  padding: 10px;
+  text-shadow: 2px 2px white;
+  text-align: center;
+}
+
+.nav {
+  width: $content-width;
+  text-indent: -120px;
+}
+
+#items {
+  background: $reindeer;
+  width: $content-width/2;
+  margin-left: $content-width/5;
+  @include border-radius(8px);
+}
+
+header, footer, ul {
+  border: 5px solid $wintergreen;
+  @include border-radius(8px);
+  text-shadow: 2px 2px white;
+  text-align: center;
+  background: $reindeer;
+  box-shadow: 10px 10px 5px #888888;
+
+}
+img {
+  width: $content-width/3;
+  height: $content-width/4.5;
+  margin: 20px;
+  @include border-radius(8px);
+  border: 3px solid $santared;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  text-shadow: 3px 3px white;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  color: $santared;
+}
+
+h1, h3 {
+  color: $wintergreen;
+}
+
+a {
+  color: white;
+}
+
+input {
+  @include border-radius(8px);
+  border: 2px solid $wintergreen;
+}
+
+.btn {
+  margin: 5px;
+  background: $wintergreen;
+}

@@ -1,0 +1,10 @@
+<h2>Check out your gift list below.</h2>
+
+
+<ul id = "items">
+<% @gifts.each do |gift| %>
+  <img src = "<%=gift.image_url%>"><br><strong><%=gift.title%></strong> - for <%=gift.recipient %>
+  <button type="button" class="btn btn-success btn-default"><%= link_to "More Info", gift_path(gift) %></button><br>
+
+<%end%>
+</ul>
